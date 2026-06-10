@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCloudApp</title>
+    <style>
+        /* Reset and base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1a237e;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav .brand {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero section */
+        .hero {
+            background-color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #1a237e;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Status cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #1a237e;
+            color: white;
+            padding: 25px 30px;
+            border-radius: 8px;
+            width: 220px;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .card.green { border-color: #00e676; }
+        .card.orange { border-color: #ff9100; }
+        .card.blue { border-color: #40c4ff; }
+        .card.purple { border-color: #e040fb; }
+
+        .card h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .card.green h3 { color: #00e676; }
+        .card.orange h3 { color: #ff9100; }
+        .card.blue h3 { color: #40c4ff; }
+        .card.purple h3 { color: #e040fb; }
+
+        .card p {
+            font-size: 13px;
+            color: #ccc;
+        }
+
+        /* About section */
+        .about {
+            background-color: white;
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        .about h2 {
+            color: #1a237e;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <span class="brand">&#9729; MyCloudApp</span>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>Welcome to Your Deployed Web App</h1>
+        <p>Served securely via CloudFront CDN &middot;
+           Routed by Application Load Balancer &middot;
+           Hosted on EC2</p>
+    </div>
+
+    <!-- Status Cards -->
+    <div class="cards">
+        <div class="card green">
+            <h3>HTTPS Secured</h3>
+            <p>SSL via ACM + CloudFront</p>
+        </div>
+        <div class="card orange">
+            <h3>Load Balanced</h3>
+            <p>ALB Health Checks Active</p>
+        </div>
+        <div class="card blue">
+            <h3>CDN Enabled</h3>
+            <p>Global CloudFront Edge</p>
+        </div>
+        <div class="card purple">
+            <h3>CI/CD Live</h3>
+            <p>GitHub Actions Pipeline</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about" id="about">
+        <h2>About This Project</h2>
+        <p>This web application is deployed on AWS as part of
+           an end-to-end cloud capstone project. It demonstrates
+           secure, scalable cloud architecture using EC2, ALB,
+           CloudFront, S3, and GitHub Actions CI/CD pipeline.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        AWS Free Tier Project &nbsp;|&nbsp; Intern Cohort
+        &nbsp;|&nbsp; Powered by EC2 + CloudFront
+    </footer>
+
+</body>
+</html>
